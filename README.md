@@ -1,5 +1,22 @@
 ### LDAP PASSPORT
 
+```
+php artisan migrate
+
+php artisan passport:install
+php artisan passport:client --password
+```
+
+Which user provider should this client use to retrieve users? [users]:
+  [0] users
+  [1] ldap 
+
+Select option 1.
+
+I send the following parameters to generate the token
+
+![Screenshot Postman](postmant-gc.png)
+
 - I am trying to integrate ldaprecord and laravel passport
 - The personal Access Token already works. in the following path:
 ```
